@@ -1,0 +1,42 @@
+
+.classText{
+    color: #709dff ;
+    /* background: #15b322; */
+    background-color: rgba(0, 128, 0, 0.13);
+    padding: 15px 20px 15px 20px;
+    background-image: url("../image/icons8-stream-logo-64.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: contain;  */
+    /* background-size: 200px 100px; */
+    /* translate: 10px -50px; */
+}
+
+.classDiv1,.classDiv2{
+    color: #709dff ;
+    /* background: #15b322; */
+    background-image: url("../image/icons8-stream-logo-64.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 10px;
+}
+
+.classDiv1{
+    background-color: rgba(0, 128, 0, 0.33);
+    padding: 0.01% 20px 0.01% 20px; 
+}
+
+.classDiv2{
+    background-color: rgba(0, 128, 122, 0.33);
+    padding: 0.01% 20px 0.01% 20px; 
+}
+
+.classProfile{
+    height: 256px;
+    width: 256px;
+    background-position: center;
+    background-image: url("../image/iconProfile2.png");
+    background-size: cover;
+    padding: 0;
+    translate: 100px -300px;
+}
