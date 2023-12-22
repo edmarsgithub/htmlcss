@@ -1,6 +1,5 @@
-
-.classText{
-    color: #709dff ;
+.classText {
+    color: #709dff;
     /* background: #15b322; */
     background-color: rgba(0, 128, 0, 0.13);
     padding: 15px 20px 15px 20px;
@@ -12,26 +11,27 @@
     /* translate: 10px -50px; */
 }
 
-.classDiv1,.classDiv2{
-    color: #709dff ;
+.classDiv1,
+.classDiv2 {
+    color: #709dff;
     /* background: #15b322; */
-    background-image: url("../image/icons8-stream-logo-64.svg");
+    background-image: url("//picsum.photos/400/200?random");
     background-repeat: no-repeat;
     background-position: center;
     border: 10px;
 }
 
-.classDiv1{
+.classDiv1 {
     background-color: rgba(0, 128, 0, 0.33);
-    padding: 0.01% 20px 0.01% 20px; 
+    padding: 0.01% 20px 0.01% 20px;
 }
 
-.classDiv2{
+.classDiv2 {
     background-color: rgba(0, 128, 122, 0.33);
-    padding: 0.01% 20px 0.01% 20px; 
+    padding: 0.01% 20px 0.01% 20px;
 }
 
-.classProfile{
+.classProfile {
     height: 256px;
     width: 256px;
     background-position: center;
@@ -40,3 +40,57 @@
     padding: 0;
     translate: 100px -300px;
 }
+
+.wxh1 {
+    width: 320px;
+    height: 240px;
+    background-color: #ff0000;
+}
+
+.wxh2 {
+    width: 320px;
+    height: 50px;
+    background-color: #dab8b8;
+}
+
+.wxh3 {
+    width: 320px;
+    height: 240px;
+    background-color: #2c491b;
+    /* padding: 20px 0px 20px 0px; */
+    background-clip: content-box;
+}
+
+.wxh4 {
+    width: 320px;
+    height: 50px;
+    background-color: #491a86;
+    box-shadow: 5px 5px 25px 15px yellowgreen;
+}
+
+/* Exemplo com uma div */
+div {
+    background-image: url("//picsum.photos/400/200?random");
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 5px dashed black;
+    background-color: #66ccff;
+    
+  }
+  
+  /* background-clip: border-box; (valor padrão) */
+  .border-box {
+    background-clip: border-box;
+  }
+  
+  /* background-clip: padding-box; */
+  .padding-box {
+    background-clip: padding-box;
+  }
+  
+  /* background-clip: content-box; */
+  .content-box {
+    background-clip: content-box;
+  }
+  

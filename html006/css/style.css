@@ -1,0 +1,19 @@
+.textRoot{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20vw;
+}
+
+.textTitleTop{
+    background-image: url("../image/fire.webp");
+    background-size: cover;
+    background-position: bottom;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    /* text-shadow: 5px 5px 10px black ; */
+}
+
