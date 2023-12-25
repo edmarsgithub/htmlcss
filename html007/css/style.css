@@ -1,19 +1,40 @@
+body{
+    /* background-image: url("https://unsplash.it/800"); */
+    background-image: url("../image/fire.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .textRoot{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* height: 100vh; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20vw;
+    transform: translate(-8px, 289px);
 }
 
 .textTitleTop{
+    transform: translate(0px, 0px);
+    position: absolute;
+    /* top: 0; */
+    /* left: 0; */
     background-image: url("../image/fire.webp");
     background-size: cover;
     background-position: bottom;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    /* text-shadow: 5px 5px 10px black ; */
+    /* text-shadow: 5px 5px 15px black ; */
 }
 
+.textTitleShadow{
+    position: relative;
+    z-index: -1;
+    /* top: 0; */
+    /* left: 0; */
+    transform: translate(0px, 3px);
+    text-shadow: 15px 15px 10px black, -6px -6px 10px black;
+
+}
