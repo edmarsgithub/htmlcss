@@ -22,7 +22,8 @@ body{
     /* left: 0; */
     background-image: url("../image/fire.webp");
     background-size: cover;
-    background-position: bottom;
+    /* background-position: bottom; */
+    background-position: 2px 228px;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -34,7 +35,7 @@ body{
     z-index: -1;
     /* top: 0; */
     /* left: 0; */
-    transform: translate(0px, 3px);
+    transform: translate(0px, 0px);
     text-shadow: 15px 15px 10px black, -6px -6px 10px black;
 
 }
