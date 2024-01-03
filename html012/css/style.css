@@ -1,0 +1,48 @@
+:root {
+    --backColorHtml: #f9e8e6;
+    --backColorOn: #f8cfca;
+    --backColorOff: #e2d0cd;
+}
+
+html {
+    background-color: var(--backColorHtml);
+}
+
+body {
+    padding-bottom: 500px;
+}
+
+.formHilighOn {
+    background-color: var(--backColorOn);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.formHilighOff {
+    background-color: var(--backColorOff);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.classRadio label,
+.classRadio input,
+.classRadio span{
+    display: inline-block
+}
+
+.classCheck label,
+.classCheck input,
+.classCheck span{
+    display: inline-block
+}
+
+.label, input {
+    display: block;
+}
+
+.btn{
+    background-color: aquamarine;
+}

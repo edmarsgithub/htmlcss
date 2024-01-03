@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="icon" type="image/x-icon" href="image/icons8-stream-logo-64.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h2>Formulários Html</h2>
+    <form action="">
+        <fieldset>
+            <legend>Elementos do form</legend>
+            <legend>campo 1</legend>
+            <!-- label e input -->
+            <div class="formHilighOn">
+                <label class="label" for="inputNome">nome:</label>
+                <input name="inputName" class="input" id="inputNome" type="text">
+            </div>
+            <!-- label, imput e combobox -->
+            <legend>campo 2</legend>
+            <div class="formHilighOff">
+                <label class="label" for="idInputEnd">end:</label>
+                <input name="inputAdress" class="input" id="idInputEnd" type="text">
+            </div>
+            <legend>campo 3</legend>
+            <div class="formHilighOn">
+                <!-- combobox -->
+                <label class="label" for="idInputCity">city:</label>
+                <select name="inputCity" id="idInputCity">
+                    <option value="city0">to select one.</option>
+                    <option value="city1">cidade 1</option>
+                    <option value="city2">cidade 2</option>
+                    <option value="city3">cidade 3</option>
+                    <option value="city4">cidade 4</option>
+                </select>
+                <input name="btnSend" class="btn" id="btnSend" type="submit" value="Gravar">
+                <input name="btnReset" class="btn" id="btnSend" type="reset" value="Resetar">
+            </div>
+            <!-- listbox : multi selection -->
+            <legend>campo 4</legend>
+            <div class="formHilighOff">
+                <label class="label" for="idSelectGroup">Select one or more:</label>
+                <select name="selectGroup" id="idSelectGroup" multiple  >
+                    <option value="opt0">option 0</option>
+                    <option value="opt1">option 1</option>
+                    <option value="opt2">option 2</option>
+                    <option value="opt3">option 3</option>
+                    <option value="opt4">option 4</option>
+                </select>
+            </div>
+            <legend>campo 5</legend>
+            <!-- textForm -->
+            <div class="formHilighOn">
+                <label class="label" for="idTextArea">text area:</label>
+                <textarea name="textArea" class="input" id="idTextArea" placeholder="digite aqui..."></textarea>
+            </div>
+            <legend>campo 6</legend>
+            <!-- datalist -->
+            <div class="formHilighOff">
+                <label class="label" for="idDataList">text area:</label>
+                <input name="dataList" id="idDataList" type="text" list="idData" placeholder="aqui também...">
+                <datalist id="idData">
+                    <option value="opt0">option 0</option>
+                    <option value="opt1">option 1</option>
+                    <option value="opt2">option 2</option>
+                    <option value="opt3">option 3</option>
+                    <option value="opt4">option 4</option>
+                </datalist>
+            </div>
+            <legend>campo 7</legend>
+            <!-- datalist -->
+            <div class="formHilighOn">
+                <label class="label" for="idPasswd">text area:</label>
+                <input name="passwd" id="idPasswd" type="password">
+            </div>
+            <legend>campo 8</legend>
+            <div class="formHilighOff">
+                <!-- label -->
+                <label class="label" for="optionsRadio">text area:</label>
+                <!-- label -->
+                <div class="classRadio">
+                    <input type="radio" value="rad1" name="optionsRadio">
+                    <label for="rad1">option 1 here</label>
+                </div>
+                <div class="classRadio">
+                    <input type="radio" value="rad3" name="optionsRadio">
+                    <label for="rad3">option 2 here</label>
+                </div>
+                <div class="classRadio">
+                    <input type="radio" value="rad3" name="optionsRadio">
+                    <label for="rad3">option 3 here</label>
+                </div>
+            </div>
+            <legend>campo 9</legend>
+            <div class="formHilighOn">
+                <!-- label -->
+                <label class="label" for="optionsCheck">text area:</label>
+                <!-- label -->
+                <div class="classCheck">
+                    <input type="checkbox" value="check1" name="optionsCheck[]">
+                    <label for="check1">option 1 here</label>
+                </div>
+                <div class="classCheck">
+                    <input type="checkbox" value="check2" name="optionsCheck[]">
+                    <label for="check2">option 2 here</label>
+                </div>
+                <div class="classCheck">
+                    <input type="checkbox" value="check3" name="optionsCheck[]">
+                    <label for="check3">option 3 here</label>
+                </div>
+            </div>
+            <!-- componente date -->
+            <legend>campo 10</legend>
+            <div class="formHilighOff">
+                <!-- label -->
+                <label class="label" for="dataPicker">datapicker</label>
+                <input type="date" name="dataPicker"  min="2024-01-03" value="2023-01-05" disabled>
+            </div>
+            <!-- enviar file -->
+            <legend>campo 11</legend>
+            <div class="formHilighOn">
+                <!-- label -->
+                <label class="label" for="sendFile">send files</label>
+
+                <input type="file" name="sendFile[]" multiple>
+            </div>
+            <legend>campo 12</legend>
+            <div class="formHilighOff">
+                <!-- label -->
+                <label class="label" for="sendNumber">send files</label>
+
+                <input type="number" name="sendNumber" id="sendNumber" step="0.2" value="185" disabled>
+                <input type="number" name="sendNumber2" id="sendNumber" step="1.345" value="1">
+            </div>
+            <legend>campo 13</legend>
+            <div class="formHilighOn">
+                <!-- label -->
+                <label class="label" for="sendEmail">send email</label>
+                <input type="email" name="sendEmail" id="sendEmail" >
+                <input type="text" name="teste" id="teste" pattern="[A-Z]{2}-[0-9]{4}-[a-z]{3}">
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
