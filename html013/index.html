@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Sale</title>
+    <link rel="shortcut icon" href="image/icons8-stream-logo-64.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="conteinerHeader">
+            <p>Cadastre seu veículo para vender mais rápido!</p>
+        </div>
+        <div class="formConteiner">
+            <div class="formHeader">
+                <p>Formulário</p>
+            </div>
+            <div class="formFraseContainer">
+                <h1 class="formFrase">Venda fácil seu carro!</h1>
+            </div>
+            <!-- formulario -->
+            <div class="formBody">
+                <form action="">
+                    <p class="normal">Descreva as características e marque os opcionais que ele possui:</p>
+                    <p class="normal">OBS: Campos com <span class="fieldRequired">*</span> são obrigatórios.</p>
+                    <!-- título -->
+                    <div class="formInput">
+                        <label class="label" for="txtTitulo">Título do anúncio <span class="fieldRequired">*</span>
+                        </label>
+                        <input class="textBox" name="txtTitulo" id="txtTitulo" type="text"
+                            placeholder="Um título para anunciar seu carro..." required minlength="1" maxlength="30">
+                    </div>
+                    <!-- preço -->
+                    <div class="formInput">
+                        <label class="label" for="txtPreco">Preço<span class="fieldRequired">*</span></label>
+                        <input class="textBox" name="txtPreco" id="txtPreco" type="text" placeholder="Defina o preço..."
+                            required minlength="1" maxlength="30">
+                    </div>
+                    <!-- descrição -->
+                    <div class="formInput">
+                        <label class="label" for="txtDesc">Descrição<span class="fieldRequired">*</span></label>
+                        <textarea class="textBox" name="txtDesc" id="txtDesc"
+                            placeholder="Aqui você coloca os detalhes do veículo, por exemplo: se ele tem algum arranhão, ..."
+                            required minlength="1" maxlength="255"></textarea>
+                    </div>
+                    <!-- Marca -->
+                    <div class="formInput">
+                        <label class="label" for="txtMarca">Marca<span class="fieldRequired">*</span></label>
+                        <input class="textBox" name="txtMarca" id="txtMarca" type="text"
+                            placeholder="Digite a marca do veículo..." required minlength="1" maxlength="30">
+                    </div>
+                    <!-- Modelo -->
+                    <div class="formInput">
+                        <label class="label" for="txtModelo">Modelo<span class="fieldRequired">*</span></label>
+                        <input class="textBox" name="txtModelo" id="txtModelo" type="text"
+                            placeholder="Digite o modelo do veículo..." required minlength="1" maxlength="30">
+                    </div>
+                    <!-- Kilometragem -->
+                    <div class="formInput">
+                        <label class="label" for="txtKm">Kilometragem (Km)<span class="fieldRequired">*</span></label>
+                        <input class="textBox" name="txtKm" id="txtKm" type="text"
+                            placeholder="Digite a kilometragem do veículo..." required minlength="1" maxlength="30">
+                    </div>
+                    <!-- Data de compra -->
+                    <div class="formInput">
+                        <label class="label" for="txtDataCompra">Data de compra<span
+                                class="fieldRequired">*</span></label>
+                        <input class="textBox" name="txtDataCompra" id="txtDataCompra" type="date" required>
+                    </div>
+                    <!-- Tipo de cambio -->
+                    <div class="formInput">
+                        <label class="label">Tipo de câmbio:<span class="fieldRequired">*</span></label>
+                        <!-- cambio options -->
+                        <div class="classRadio">
+                            <input class="radioBtn" name="optionsRadio" id="optionsManual" type="radio" value="manual"
+                                required>
+                            <label for="optionsRadio">Manual</label>
+                            <input class="radioBtn" name="optionsRadio" id="optionsSemi" type="radio"
+                                value="semiautomatico" required minlength="1" maxlength="30">
+                            <label for="optionsSemi">Semi-Automático</label>
+                            <input class="radioBtn" name="optionsRadio" id="optionsAuto" type="radio" value="automatico"
+                                required minlength="1" maxlength="30">
+                            <label for="optionsAuto">Automático</label>
+                        </div>
+                        <!-- fim cambio otpions -->
+                    </div>
+                    <!-- opcionais -->
+                    <div class="formInput">
+                        <label class="label" for="checkOptions">Opcionais</label>
+                        <div class="classCheckBlock">
+                            <div class="classCheckBlockGroup">
+                                <!-- itens -->
+                                <div class="classCheckInline">
+                                    <input type="checkbox" name="opcao[]" value="1" id="opcao1">
+                                    <label for="opcao1">Airbag</label>
+                                </div>
+                                <div class="classCheckInline">
+                                    <input type="checkbox" name="opcao[]" value="2" id="opcao2">
+                                    <label for="opcao2">Alarme</label>
+                                </div>
+                                <div class="classCheckInline">
+                                    <input type="checkbox" name="opcao[]" value="3" id="opcao3">
+                                    <label for="opcao3">Ar Condicionado</label>
+                                </div>
+                                <div class="classCheckInline">
+                                    <input type="checkbox" name="opcao[]" value="4" id="opcao4">
+                                    <label for="opcao5">Assistente de Pista</label>
+                                </div>
+                            </div>
+                            <div class="classCheckBlockGroup">
+                                <div class="classCheckInline">
+                                    <input type="checkbox" name="opcao[]" value="5" id="opcao5">
+                                    <label for="opcao8">Banco de Couro</label>
+                                </div>
+                                <div class="classCheckInline">
+                                    <input type="checkbox" name="opcao[]" value="6" id="opcao6">
+                                    <label for="opcao4">Câmera de Ré</label>
+                                </div>
+                                <div class="classCheckInline">
+                                    <input type="checkbox" name="opcao[]" value="7" id="opcao7">
+                                    <label for="opcao7">Integração com Celular</label>
+                                </div>
+                                <div class="classCheckInline">
+                                    <input type="checkbox" name="opcao[]" value="8" id="opcao8">
+                                    <label for="opcao6">Partida Keyless</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fim itens -->
+                    </div>
+                    <!-- Fotos -->
+                    <div class="formInput">
+                        <label class="label">Fotos do Carro:<span class="fieldRequired">*</span></label>
+                        <input class="btnFiles" name="txtFotos" id="txtFotos" type="file"
+                            placeholder="Nenhum arquivo escolhido..." multiple required>
+                        <div class="conteinerBtn">
+                            <label class="customBtn" for="txtFotos">Escolher Arquivo</label>
+                        </div>
+                    </div>
+                    <div class="classSender">
+                        <input class="btnSend" type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
