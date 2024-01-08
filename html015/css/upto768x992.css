@@ -17,6 +17,10 @@
     display: none;
 }
 
+.downto600land{
+    display: none;
+}
+
 .upto600x768 {
     display: none;
 }

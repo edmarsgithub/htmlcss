@@ -1,27 +1,23 @@
 .bannerL {
-    color: rgb(28, 121, 133);
-    background-color: rgb(115, 216, 225);
+    color: rgb(184, 230, 46);
+    background-color: rgb(238, 148, 112);
 }
 
 .bannerC {
-    color: rgb(169, 18, 152);
-    background-color: rgb(216, 100, 237);
+    color: rgb(182, 218, 23);
+    background-color: rgb(50, 195, 14);
 }
 
 .bannerR {
-    color: rgb(98, 0, 255);
-    background-color: rgb(148, 100, 237);
+    color: rgb(12, 205, 239);
+    background-color: rgb(125, 152, 169);
 }
 
-.downto600 {
+.downto600{
     display: none;
 }
 
-.downto600land{
-    display: none;
-}
-
-.upto600x768 {
+.downto600land {
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
@@ -29,6 +25,11 @@
     padding: 40px 0px 40px 0;
     display: block;
     background-color: yellow;
+}
+
+
+.upto600x768 {
+    display: none;
 }
 
 .upto768x992 {
