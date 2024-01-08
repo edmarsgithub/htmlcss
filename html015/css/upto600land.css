@@ -3,42 +3,52 @@
     padding: 0;
 }
 
-h1 {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-}
-
 body {
     position: relative;
 }
 
 .elemtosEmColuna {
-    background: rgb(186, 215, 252);
+    background: rgb(255, 255, 0);
     position: relative;
     max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bannerL,
+.bannerC,
+.bannerR{
+    line-height: 50px;
+    margin: 10px;
 }
 
 .bannerL {
+    text-align: center;
     color: rgb(184, 230, 46);
     background-color: rgb(238, 148, 112);
-    display: inline-block;
-    width: 33%;
+    /* display: inline-block; */
+    width: 30%;
+    height: 50px;
 }
 
 .bannerC {
+    text-align: center;
     color: rgb(182, 218, 23);
     background-color: rgb(50, 195, 14);
-    display: inline-block;
-    width: 33%;
+    /* display: inline-block; */
+    width: 30%;
+    height: 50px;
 }
 
 .bannerR {
+    text-align: center;
     color: rgb(12, 205, 239);
     background-color: rgb(125, 152, 169);
-    display: inline-block;
-    width: 33%;
+    /* display: inline-block; */
+    width: 30%;
+    height: 50px;
 }
 
 .downto600 {
