@@ -15,6 +15,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-weight: bold;
 }
 
 .bannerL,
@@ -26,8 +27,8 @@ body {
 
 .bannerL {
     text-align: center;
-    color: rgb(184, 230, 46);
-    background-color: rgb(238, 148, 112);
+    color: rgb(222, 237, 178);
+    background-color: rgb(204, 43, 43);
     /* display: inline-block; */
     width: 30%;
     height: 50px;
@@ -35,8 +36,8 @@ body {
 
 .bannerC {
     text-align: center;
-    color: rgb(182, 218, 23);
-    background-color: rgb(50, 195, 14);
+    color: rgb(249, 251, 240);
+    background-color: rgb(20, 195, 14);
     /* display: inline-block; */
     width: 30%;
     height: 50px;
@@ -44,8 +45,8 @@ body {
 
 .bannerR {
     text-align: center;
-    color: rgb(12, 205, 239);
-    background-color: rgb(125, 152, 169);
+    color: rgb(198, 242, 250);
+    background-color: rgb(7, 121, 214);
     /* display: inline-block; */
     width: 30%;
     height: 50px;
