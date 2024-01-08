@@ -1,0 +1,36 @@
+.bannerL {
+    color: rgb(28, 98, 133);
+    background-color: rgb(100, 196, 237);
+}
+
+.bannerC {
+    color: rgb(28, 28, 133);
+    background-color: cornflowerblue;
+}
+
+.bannerR {
+    color: rgb(98, 0, 255);
+    background-color: rgb(148, 100, 237);
+}
+
+.default {
+    display: none;
+}
+
+.upto400 {
+    display: none;
+}
+
+.upto500 {
+    display: none;
+}
+
+.upto600 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 40px 0px 40px 0;
+    display: block;
+    background-color: yellow;
+}

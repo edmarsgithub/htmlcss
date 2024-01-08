@@ -1,0 +1,5 @@
+@import url('upto400.css') screen and (max-width: 400px);
+@import url('upto500.css') screen and (min-width: 401px) and (max-width: 500px);
+@import url('upto600.css') screen and (min-width: 501px) and (max-width: 600px);
+@import url('default.css') screen and (min-width: 601px);
+
