@@ -1,19 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+body {
+    position: relative;
+}
+
+.elemtosEmColuna {
+    background: rgb(186, 215, 252);
+    position: relative;
+    max-width: 100%;
+}
+
 .bannerL {
     color: rgb(184, 230, 46);
     background-color: rgb(238, 148, 112);
+    display: inline-block;
+    width: 33%;
 }
 
 .bannerC {
     color: rgb(182, 218, 23);
     background-color: rgb(50, 195, 14);
+    display: inline-block;
+    width: 33%;
 }
 
 .bannerR {
     color: rgb(12, 205, 239);
     background-color: rgb(125, 152, 169);
+    display: inline-block;
+    width: 33%;
 }
 
-.downto600{
+.downto600 {
     display: none;
 }
 
