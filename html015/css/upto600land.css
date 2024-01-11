@@ -7,49 +7,51 @@ body {
     position: relative;
 }
 
-.elemtosEmColuna {
+.elemtosEmColuna1 {
     background: rgb(255, 255, 0);
-    position: relative;
-    max-width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: bold;
+}
+
+.elemtosEmColuna2 {
+    background: rgb(0, 255, 21);
+    display: flex;
+}
+/* um dois tres */
+.cards{
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+    
 }
 
 .bannerL,
 .bannerC,
 .bannerR{
-    line-height: 50px;
-    margin: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
 }
 
 .bannerL {
     text-align: center;
     color: rgb(222, 237, 178);
     background-color: rgb(204, 43, 43);
-    /* display: inline-block; */
-    width: 30%;
-    height: 50px;
 }
 
 .bannerC {
     text-align: center;
-    color: rgb(249, 251, 240);
+    color: rgb(244, 252, 211);
     background-color: rgb(20, 195, 14);
-    /* display: inline-block; */
-    width: 30%;
-    height: 50px;
+    margin: 10px 10px;
 }
 
 .bannerR {
     text-align: center;
     color: rgb(198, 242, 250);
     background-color: rgb(7, 121, 214);
-    /* display: inline-block; */
-    width: 30%;
-    height: 50px;
 }
 
 .downto600 {
@@ -78,3 +80,5 @@ body {
 .upto992 {
     display: none;
 }
+
+

@@ -1,0 +1,48 @@
+https://codepen.io/pen/
+
+html:
+<div class="container">
+  <div class="cards">
+  <div class="card">
+    <p>Este texto é o menor dos três e vai quebrar também.</p>
+  </div>
+  <div class="card">
+    <p>Este texto é um pouco menor que o anterior e vai quebrar também e você sabe disso. Este texto é um pouco menor que o anterior e vai quebrar também e você sabe dissoEste texto é um pouco menor que o anterior e vai quebrar também e você sabe disso. Este texto é um pouco menor que o anterior e vai quebrar também e você sabe disso.</p>
+  </div>
+  <div class="card">
+    <p>Este texto é o menor dos três e vai quebrar também.</p>
+  </div>
+  </div>
+</div>
+
+
+css:
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh; /* Ajuste conforme necessário */
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 100%;
+}
+
+.card {
+  margin: 10px;
+  background-color: yellow;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc; /* Adicione uma borda para destacar os cards (opcional) */
+}
+
+.card p {
+  text-align: center;
+  margin: 0;
+}
