@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Pragati+Narrow&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /* margin: 0 auto; */
+    padding: 0;
+    text-decoration: none;
+}
+
+html {
+    background-color: #dddddd;
+}
+
+.conteiner {
+    background-color: cornflowerblue;
+    max-width: 900px;
+    position: relative;
+    margin: 50px auto;
+    padding: 50px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* background-color: yellow; */
+}
+
+.card {
+    padding: 10px;
+    background-color: antiquewhite;
+    flex: 0 1 calc(25% - 1em);
+    position: relative;
+    cursor: pointer;
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(12, 76, 194);
+    border-radius: 20px;
+    transition: border-color 0.5s;
+}
+
+.card:hover {
+    border-color: rgb(167, 199, 255);
+}
+
+/* elementos do card */
+.cardImage {
+    aspect-ratio: 16/9;
+    font-size: 0px;
+}
+
+.imageRaw {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.cardTitle {
+    clear: both;
+    font-family: 'PT Sans Narrow', sans-serif;
+    letter-spacing: 2px;
+    color: #007489;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    /* display: none; */
+}
+
+.cardText {
+    color: #404040;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.cardButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    background-color: #7cb0d5;
+    border: 1px solid #dddddd;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.rects {
+    display: flex;
+    justify-content: center;
+}
+
+.rect1, .rect2, .rect3 {
+    border: 1px red solid;
+
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+align-items: center;
+}
+
+.rect1{
+    width: 30%;
+    background-color: red;
+}
+
+.rect2{
+    width: 20%;
+    background-color: yellow
+}
+
+.rect3{
+    width: 50%;
+    background-color: blue;
+}
