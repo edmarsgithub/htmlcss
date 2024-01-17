@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="host virtual server cloud cloud computing infra-estrutura">
     <title>virtualHost</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet"
@@ -14,101 +15,189 @@
     <div class="conteinerMain">
         <!-- header : menu -->
         <header class="conteinerHeaderNav">
-            <div class="menuLeft"></div>
-            <div class="menuCenter"></div>
-            <nav class="menuRigth">
-                <ul>
-                    <li class="navButton"><a href="#">home</a></li>
-                    <li class="navButton"><a href="#">preços</a></li>
-                    <li class="navButton"><a href="#">contato</a></li>
-                    <li class="navButtonLogin"><a href="#">entrar</a></li>
-                </ul>
+            <nav>
+                <div class="menuLeft">
+                    <a href="#">
+                        <img src="img/hdchostlogo.png" alt="Logotipo">
+                    </a>
+                </div>
+                <div class="menuRigth">
+                    <ul>
+                        <li class="navButton"><a href="#">home</a></li>
+                        <li class="navButton"><a href="#">preços</a></li>
+                        <li class="navButton"><a href="#">contato</a></li>
+                        <li class="navButtonLogin"><a href="#">entrar</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <!-- background image -->
-        <div class="conteinerBanner">
-            <div class="textBannerTitle">yHost</div>
-            <div class="textBanner">Sua apliação executando nos melhores servidores!</div>
-        </div>
-        <!-- conteiner features -->
-        <div class="conteinerFeatues">
-            <div class="blockSecure">
-                <span class="material-symbols-outlined">
-                    encrypted
-                </span>
-                <div class="secureTitle">Segurança</div>
-                <p class="sucureText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex veritatis non,
-                    distinctio,
-                    dolor sapiente dolorum ab delectus rem labore animi consequuntur quo nulla autem vitae in
-                    eligendi
-                    cumque corrupti ipsum.</p>
-            </div>
-            <div class="blockPerform">
-                <span class="material-symbols-outlined">
-                    bolt
-                </span>
-                <div class="performTitle">Performance</div>
-                <p class="performText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex veritatis non,
-                    distinctio,
-                    dolor sapiente dolorum ab delectus rem labore animi consequuntur quo nulla autem vitae in
-                    eligendi
-                    cumque corrupti ipsum.</p>
-            </div>
-            <div class="blockSuport">
-                <span class="material-symbols-outlined">
-                    support_agent
-                </span>
-                <div class="suportTitle">Suporte 24/7</div>
-                <p class="suportText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex veritatis non,
-                    distinctio,
-                    dolor sapiente dolorum ab delectus rem labore animi consequuntur quo nulla autem vitae in
-                    eligendi
-                    cumque corrupti ipsum.</p>
-            </div>
-        </div>
-        <!-- conteiner plans and prices -->
-        <div class="conteinerPlanPriceTitle">
-            <div class="planTitle">Planos e Preços</div>
-            <div class="planText">Selecione o plano que atende as suas necessidades!</div>
-        </div>
-        <div class="conteinerPlanPrices">
-            <div class="planBasic">
-                <div class="rectPlan">Básico</div>
-                <div class="rectDescribe">
-                    <p>2GB de espaço</p>
-                    <p>1 subdomínio</p>
-                    <p>25 contas de email</p>
-                    <p>c-panel</p>
-                    <p>suporte 27/7</p>
+        <section>
+            <article>
+                <div class="conteinerBanner">
+                    <div class="textBannerTitle">yHost</div>
+                    <div class="textBanner">Sua apliação executando nos melhores servidores!</div>
                 </div>
-                <div class="rectKnowMore">Saber mais...</div>
-                <div class="circlePrice">R$ 15/mês</div>
+            </article>
+            <!-- conteiner features -->
+            <article>
+                <div class="conteinerFeatues">
+                    <div class="blockSecure">
+                        <span class="material-symbols-outlined">
+                            encrypted
+                        </span>
+                        <div class="secureTitle">Segurança</div>
+                        <p class="sucureText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex veritatis non,
+                            distinctio,
+                            dolor sapiente dolorum ab delectus rem labore animi consequuntur quo nulla autem vitae in
+                            eligendi
+                            cumque corrupti ipsum.</p>
+                    </div>
+                    <div class="blockPerform">
+                        <span class="material-symbols-outlined">
+                            bolt
+                        </span>
+                        <div class="performTitle">Performance</div>
+                        <p class="performText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex veritatis
+                            non,
+                            distinctio,
+                            dolor sapiente dolorum ab delectus rem labore animi consequuntur quo nulla autem vitae in
+                            eligendi
+                            cumque corrupti ipsum.</p>
+                    </div>
+                    <div class="blockSuport">
+                        <span class="material-symbols-outlined">
+                            support_agent
+                        </span>
+                        <div class="suportTitle">Suporte 24/7</div>
+                        <p class="suportText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex veritatis non,
+                            distinctio,
+                            dolor sapiente dolorum ab delectus rem labore animi consequuntur quo nulla autem vitae in
+                            eligendi
+                            cumque corrupti ipsum.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- conteiner plans and prices -->
+        <section>
+            <div class="conteinerPlanPriceTitle">
+                <div class="planTitle">Planos e Preços</div>
+                <div class="planText">Selecione o plano que atende as suas necessidades!</div>
             </div>
-            <div class="planDedicated"></div>
-            <div class="planDedicatedPlus"></div>
-            <div class="planCloud"></div>
-        </div>
-        <!-- conteiner question about domain -->
-        <div class="conteinerQuestion">
-            <div class="question">Qual domínio você quer para o seu site?</div>
-            <div class="command">Verifique se o domínio está disponível</div>
-            <input class="textDomain" type="text" name="nDomain" id="idDomain"
-                placeholder="Digite o domínio desejado...">
-            <input class="buttonSearchDomain" type="button" value="Procurar domínio">
-        </div>
-        <!-- conteiner form message -->
-        <div class="conteinerForm">
-            <div class="titleMessage">Mande uma mensagem</div>
-            <div class="message">Envie a sua mensagem, em até 4 horas um especialista entrará em contato</div>
-            <div class="inputs">
-                <input class="textName" type="text" name="nName" id="idName" placeholder="seu nome...">
-                <input class="textEmail" type="email" name="nEmail" id="idEmail" placeholder="seu email...">
+            <div class="conteinerPlanPrices">
+                <!-- R$ 15 -->
+                <article>
+                    <div class="planBasic">
+                        <div class="rectPlan">Básico</div>
+                        <div class="rectDescribe">
+                            <ul>
+                                <li>2GB de espaço</li>
+                                <li>1 subdomínio</li>
+                                <li>25 contas de email</li>
+                                <li>c-panel</li>
+                                <li>suporte 24/7</li>
+                            </ul>
+                        </div>
+                        <div class="rectKnowMore">
+                            <a href="#">Saber mais...</a>
+                        </div>
+                        <div class="circlePrice">R$ 15/mês</div>
+                    </div>
+                </article>
+                <!-- R$ 30 -->
+                <article>
+                    <div class="planDedicated">
+                        <div class="rectPlan">Dedicado</div>
+                        <div class="rectDescribe">
+                            <ul>
+                                <li>5GB de espaço</li>
+                                <li>10 subdomínio</li>
+                                <li>50 contas de email</li>
+                                <li>c-panel</li>
+                                <li>suporte 24/7</li>
+                            </ul>
+                        </div>
+                        <div class="rectKnowMore">
+                            <a href="#">Saber mais...</a>
+                        </div>
+                        <div class="circlePrice">R$ 30/mês</div>
+
+                    </div>
+                </article>
+                <!-- R$ 50 -->
+                <article>
+                    <div class="planDedicatedPlus">
+                        <div class="rectPlan">Dedicado Plus</div>
+                        <div class="rectDescribe">
+                            <ul>
+                                <li>10GB de espaço</li>
+                                <li>10 subdomínio</li>
+                                <li>100 contas de email</li>
+                                <li>c-panel</li>
+                                <li>suporte 24/7</li>
+                            </ul>
+                        </div>
+                        <div class="rectKnowMore">
+                            <a href="#">Saber mais...</a>
+                        </div>
+                        <div class="circlePrice">R$ 50/mês</div>
+
+                    </div>
+                </article>
+                <!-- R$ 100 -->
+                <article>
+                    <div class="planCloud">
+                        <div class="rectPlan">Cloud</div>
+                        <div class="rectDescribe">
+                            <ul>
+                                <li>20GB de espaço</li>
+                                <li>20 subdomínio</li>
+                                <li>200 contas de email</li>
+                                <li>c-panel</li>
+                                <li>suporte 24/7</li>
+                            </ul>
+                        </div>
+                        <div class="rectKnowMore">
+                            <a href="#">Saber mais...</a>
+                        </div>
+                        <div class="circlePrice">R$ 100/mês</div>
+
+                    </div>
+                </article>
             </div>
-            <textarea class="textMessage" name="mTextMessage" id="idTextMessage" cols="30" rows="10"
-                placeholder="Descreva o que você precisa para seu projeto..."></textarea>
-            <input class="buttonSend" type="submit" value="Enviar">
-        </div>
-        <div class="signature">yHost@2024</div>
+        </section>
+        <!-- conteiner input question about domain -->
+        <section>
+            <form>
+                <div class="conteinerQuestion">
+                    <div class="question">Qual domínio você quer para o seu site?</div>
+                    <div class="command">Verifique se o domínio está disponível</div>
+                    <input class="textDomain" type="text" name="nDomain" id="idDomain"
+                        placeholder="Digite o domínio desejado...">
+                    <input class="buttonSearchDomain" type="button" value="Procurar domínio">
+                </div>
+            </form>
+        </section>
+        <!-- conteiner input form message -->
+        <section>
+            <form>
+                <div class="conteinerForm">
+                    <div class="titleMessage">Mande uma mensagem</div>
+                    <div class="message">Envie a sua mensagem, em até 4 horas um especialista entrará em contato</div>
+                    <div class="inputs">
+                        <input class="textName" type="text" name="nName" id="idName" placeholder="seu nome...">
+                        <input class="textEmail" type="email" name="nEmail" id="idEmail" placeholder="seu email...">
+                    </div>
+                    <textarea class="textMessage" name="mTextMessage" id="idTextMessage" cols="30" rows="10"
+                        placeholder="Descreva o que você precisa para seu projeto..."></textarea>
+                    <input class="buttonSend" type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+        <footer>
+            <div class="signature">yHost@2024</div>
+        </footer>
     </div>
 </body>
 
