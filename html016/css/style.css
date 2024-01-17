@@ -98,27 +98,96 @@ html {
     justify-content: center;
 }
 
-.rect1, .rect2, .rect3 {
+.rect1,
+.rect2,
+.rect3 {
     border: 1px red solid;
 
     height: 50px;
     text-align: center;
     display: flex;
     justify-content: center;
-align-items: center;
+    align-items: center;
 }
 
-.rect1{
+.rect1 {
     width: 30%;
     background-color: red;
 }
 
-.rect2{
+.rect2 {
     width: 20%;
     background-color: yellow
+    
 }
 
-.rect3{
+.rect3 {
     width: 50%;
     background-color: blue;
+}
+
+/* testando abc */
+
+.rectsTable {
+    display: flex;
+    justify-content: center;
+}
+
+.rectbl1 {
+    border: 1px red solid;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+
+
+
+.rectbl3 {
+    border: 1px red solid;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+}
+
+.rectbl2 {
+    border: 1px red solid;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 200px);
+}
+
+.container {
+    overflow: hidden;
+    /* Limpa o float */
+}
+
+.element {
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #aeb52f;
+}
+
+.left {
+    float: left;
+    width: 50px;
+}
+
+.right {
+    float: right;
+    width: 150px;
+}
+
+.middle {
+    width: calc(100% - 200px);
+
+    /* Subtrai a largura dos elementos à esquerda e à direita */
 }
