@@ -6,48 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="host virtual server cloud cloud computing infra-estrutura">
     <title>virtualHost</title>
+
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- preloader -->
+    <link rel="preload" href="css/style.css" as="style">
+  
+    <!-- resouces -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"> -->
+    <!-- <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"> -->
+
 </head>
 
 <body>
     <div class="conteinerMain">
         <!-- header : menu -->
         <header class="conteinerHeaderNav">
-            <nav>
-                <div class="menuLeft">
-                    <a href="#">
-                        <img src="img/hdchostlogo.png" alt="Logotipo">
-                    </a>
-                </div>
-                <div class="menuRigth">
-                    <ul>
-                        <li class="navButton"><a href="#">home</a></li>
-                        <li class="navButton"><a href="#">preços</a></li>
-                        <li class="navButton"><a href="#">contato</a></li>
-                        <li class="navButtonLogin"><a href="#">entrar</a></li>
-                    </ul>
-                </div>
+            <nav class="navBar">
+                <a href="#">
+                    <img class="menuLeft" src="img/hdchostlogo.webp" alt="Logotipo">
+                </a>
+            </nav>
+            <nav class="navBar">
+                <ul class="menuRigth">
+                    <li class="navButton"><a href="#">home</a></li>
+                    <li class="navButton"><a href="#">preços</a></li>
+                    <li class="navButton"><a href="#">contato</a></li>
+                    <li class="navButtonLogin"><a href="#">entrar</a></li>
+                </ul>
             </nav>
         </header>
         <!-- background image -->
         <section>
             <article>
                 <div class="conteinerBanner">
-                    <div class="textBannerTitle">yHost</div>
-                    <div class="textBanner">Sua apliação executando nos melhores servidores!</div>
+                    <h1 class="textBannerTitle">yHost</h1>
+                    <h2 class="textBanner">Sua apliação executando nos melhores servidores!</h2>
                 </div>
             </article>
             <!-- conteiner features -->
             <article>
-                <div class="conteinerFeatues">
+                <div class="conteinerFeatures">
                     <div class="blockSecure">
                         <span class="material-symbols-outlined">
                             encrypted
                         </span>
-                        <div class="secureTitle">Segurança</div>
-                        <p class="sucureText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex veritatis non,
+                        <h5 class="featureTitle">Segurança</h5>
+                        <p class="featureText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex veritatis
+                            non,
                             distinctio,
                             dolor sapiente dolorum ab delectus rem labore animi consequuntur quo nulla autem vitae in
                             eligendi
@@ -57,20 +68,21 @@
                         <span class="material-symbols-outlined">
                             bolt
                         </span>
-                        <div class="performTitle">Performance</div>
-                        <p class="performText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex veritatis
+                        <h5 class="featureTitle">Performance</h5>
+                        <p class="featureText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex veritatis
                             non,
                             distinctio,
                             dolor sapiente dolorum ab delectus rem labore animi consequuntur quo nulla autem vitae in
                             eligendi
                             cumque corrupti ipsum.</p>
                     </div>
-                    <div class="blockSuport">
+                    <div class="blockSupport">
                         <span class="material-symbols-outlined">
                             support_agent
                         </span>
-                        <div class="suportTitle">Suporte 24/7</div>
-                        <p class="suportText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex veritatis non,
+                        <h5 class="featureTitle">Suporte 24/7</h5>
+                        <p class="featureText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex veritatis
+                            non,
                             distinctio,
                             dolor sapiente dolorum ab delectus rem labore animi consequuntur quo nulla autem vitae in
                             eligendi
@@ -82,16 +94,17 @@
         <!-- conteiner plans and prices -->
         <section>
             <div class="conteinerPlanPriceTitle">
-                <div class="planTitle">Planos e Preços</div>
+                <h3 class="planTitle">Planos e Preços</h3>
                 <div class="planText">Selecione o plano que atende as suas necessidades!</div>
             </div>
             <div class="conteinerPlanPrices">
                 <!-- R$ 15 -->
                 <article>
-                    <div class="planBasic">
-                        <div class="rectPlan">Básico</div>
-                        <div class="rectDescribe">
-                            <ul>
+                    <div class="planCard">
+                        <div class="circlePrice">R$ 15/mês</div>
+                        <h4 class="rectPlan">Básico</h4>
+                        <div>
+                            <ul class="rectDescribe">
                                 <li>2GB de espaço</li>
                                 <li>1 subdomínio</li>
                                 <li>25 contas de email</li>
@@ -99,18 +112,17 @@
                                 <li>suporte 24/7</li>
                             </ul>
                         </div>
-                        <div class="rectKnowMore">
-                            <a href="#">Saber mais...</a>
-                        </div>
-                        <div class="circlePrice">R$ 15/mês</div>
+                        <a class="rectKnowMore" href="#">Saber mais...</a>
+
                     </div>
                 </article>
                 <!-- R$ 30 -->
                 <article>
-                    <div class="planDedicated">
-                        <div class="rectPlan">Dedicado</div>
-                        <div class="rectDescribe">
-                            <ul>
+                    <div class="planCard">
+                        <div class="circlePrice">R$ 30/mês</div>
+                        <h4 class="rectPlan">Dedicado</h4>
+                        <div>
+                            <ul class="rectDescribe">
                                 <li>5GB de espaço</li>
                                 <li>10 subdomínio</li>
                                 <li>50 contas de email</li>
@@ -118,19 +130,16 @@
                                 <li>suporte 24/7</li>
                             </ul>
                         </div>
-                        <div class="rectKnowMore">
-                            <a href="#">Saber mais...</a>
-                        </div>
-                        <div class="circlePrice">R$ 30/mês</div>
-
+                        <a class="rectKnowMore" href="#">Saber mais...</a>
                     </div>
                 </article>
                 <!-- R$ 50 -->
                 <article>
-                    <div class="planDedicatedPlus">
-                        <div class="rectPlan">Dedicado Plus</div>
-                        <div class="rectDescribe">
-                            <ul>
+                    <div class="planCard">
+                        <div class="circlePriceDefault">R$ 50/mês</div>
+                        <h4 class="rectPlan">Dedicado Plus</h4>
+                        <div>
+                            <ul class="rectDescribe">
                                 <li>10GB de espaço</li>
                                 <li>10 subdomínio</li>
                                 <li>100 contas de email</li>
@@ -138,19 +147,16 @@
                                 <li>suporte 24/7</li>
                             </ul>
                         </div>
-                        <div class="rectKnowMore">
-                            <a href="#">Saber mais...</a>
-                        </div>
-                        <div class="circlePrice">R$ 50/mês</div>
-
+                        <a class="rectKnowMoreDefault" href="#">Saber mais...</a>
                     </div>
                 </article>
                 <!-- R$ 100 -->
                 <article>
-                    <div class="planCloud">
-                        <div class="rectPlan">Cloud</div>
-                        <div class="rectDescribe">
-                            <ul>
+                    <div class="planCard">
+                        <div class="circlePrice">R$ 100/mês</div>
+                        <h4 class="rectPlan">Cloud</h4>
+                        <div>
+                            <ul class="rectDescribe">
                                 <li>20GB de espaço</li>
                                 <li>20 subdomínio</li>
                                 <li>200 contas de email</li>
@@ -158,11 +164,7 @@
                                 <li>suporte 24/7</li>
                             </ul>
                         </div>
-                        <div class="rectKnowMore">
-                            <a href="#">Saber mais...</a>
-                        </div>
-                        <div class="circlePrice">R$ 100/mês</div>
-
+                        <a class="rectKnowMore" href="#">Saber mais...</a>
                     </div>
                 </article>
             </div>
@@ -171,10 +173,10 @@
         <section>
             <form>
                 <div class="conteinerQuestion">
-                    <div class="question">Qual domínio você quer para o seu site?</div>
+                    <h3 class="question">Qual domínio você quer para o seu site?</h3>
                     <div class="command">Verifique se o domínio está disponível</div>
                     <input class="textDomain" type="text" name="nDomain" id="idDomain"
-                        placeholder="Digite o domínio desejado...">
+                        placeholder="digite o domínio desejado...">
                     <input class="buttonSearchDomain" type="button" value="Procurar domínio">
                 </div>
             </form>
@@ -183,20 +185,21 @@
         <section>
             <form>
                 <div class="conteinerForm">
-                    <div class="titleMessage">Mande uma mensagem</div>
+                    <h3 class="titleMessage">Mande uma mensagem</h3>
                     <div class="message">Envie a sua mensagem, em até 4 horas um especialista entrará em contato</div>
                     <div class="inputs">
-                        <input class="textName" type="text" name="nName" id="idName" placeholder="seu nome...">
-                        <input class="textEmail" type="email" name="nEmail" id="idEmail" placeholder="seu email...">
+                        <input class="inputText" type="text" name="nName" id="idName" placeholder="seu nome...">
+                        <input class="inputText" type="email" name="nEmail" id="idEmail" placeholder="seu email...">
                     </div>
                     <textarea class="textMessage" name="mTextMessage" id="idTextMessage" cols="30" rows="10"
-                        placeholder="Descreva o que você precisa para seu projeto..."></textarea>
+                        placeholder="descreva o que você precisa para seu projeto..."></textarea>
                     <input class="buttonSend" type="submit" value="Enviar">
                 </div>
             </form>
         </section>
-        <footer>
-            <div class="signature">yHost@2024</div>
+        <footer class="signature">
+            <div class="sign">yHost@2024</div>
+            <div class="updated">Atualizado em <time datetime="2024-01-17T15:03">17/01/2024 15:03</time></div>
         </footer>
     </div>
 </body>
