@@ -1,4 +1,16 @@
+/* material-symbols-outlined-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/material-symbols-outlined-v156-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
 
+:root {
+    --backgroundColorR: #ff6b57;
+    --backgroundColorG: #2cc76a;
+}
 
 * {
     margin: 0;
@@ -8,6 +20,7 @@
 }
 
 .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
     font-size: 70px;
 }
 
@@ -61,7 +74,7 @@
 }
 
 .navButtonLogin {
-    background-color: #2cc76aFF;
+    background-color: var(--backgroundColorG);
 }
 
 .conteinerBanner {
@@ -99,11 +112,11 @@ h2 {
 }
 
 .blockSecure >.material-symbols-outlined{
-    color: #2cc76aFF;
+    color: var(--backgroundColorG);
 }
 
 .blockPerform >.material-symbols-outlined{
-    color: #f45c57;
+    color: var(--backgroundColorR);
 }
 
 .blockSupport >.material-symbols-outlined{
@@ -160,7 +173,7 @@ h2 {
 }
 
 .rectKnowMore, .rectKnowMoreDefault {
-    background-color: #2cc76aFF;
+    background-color: var(--backgroundColorG);
     height: 60px;
     color: #ffffff;
     display: flex;
@@ -175,7 +188,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #2cc76aFF;
+    background-color: var(--backgroundColorG);
     border-radius: 50% 50%;
     width: 100px;
     height: 100px;
@@ -185,7 +198,7 @@ h2 {
 }
 
 .circlePriceDefault, .rectKnowMoreDefault {
-    background-color: #f45c57 ;
+    background-color: var(--backgroundColorR) ;
 }
 
 .conteinerQuestion {
@@ -223,7 +236,7 @@ h2 {
     height: 50px;
     border-radius: 5px;
     border: none;
-    background-color: #2cc76aFF;
+    background-color: var(--backgroundColorG);
     color: #ffffff;
     font-weight: bold;
 }

@@ -8,18 +8,13 @@
     <title>virtualHost</title>
 
     <!-- preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <!-- preloader -->
+    <link rel="preload" href="img/mainbanner.webp" as="image">
     <link rel="preload" href="css/style.css" as="style">
   
     <!-- resouces -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"> -->
-    <!-- <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"> -->
 
 </head>
 
@@ -202,6 +197,22 @@
             <div class="updated">Atualizado em <time datetime="2024-01-17T15:03">17/01/2024 15:03</time></div>
         </footer>
     </div>
+    <script>
+        // Função para carregar a imagem
+        function loadImage(url) {
+          const img = new Image();
+          img.src = url;
+          img.onload = () => {
+            // Adiciona a imagem à div
+            const conteinerBanner = document.querySelector(".conteinerBanner");
+            conteinerBanner.style.backgroundImage = `url(${img.src})`;
+          };
+        }
+    
+        // Carrega a imagem dinâmica
+        const imgUrl = "img/mainbanner.webp";
+        loadImage(imgUrl);
+      </script>
 </body>
 
 </html>
