@@ -199,7 +199,16 @@
         </footer>
     </div>
     <script>
-!function(n){const e=new Image;e.src=n,e.onload=()=>{document.querySelector(".conteinerBanner").style.backgroundImage=`url(${e.src})`}}("img/mainbanner.webp")
+        function loadImage(url) {
+          const img = new Image();
+          img.src = url;
+          img.onload = () => {
+            const conteinerBanner = document.querySelector(".conteinerBanner");
+            conteinerBanner.style.backgroundImage = `url(${img.src})`;
+          };
+        }
+        const imgUrl = "img/mainbanner.webp";
+        loadImage(imgUrl);
       </script>
 </body>
 
