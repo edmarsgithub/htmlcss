@@ -195,24 +195,11 @@
         </section>
         <footer class="signature">
             <div class="sign">yHost@2024</div>
-            <div class="updated">Atualizado em <time datetime="2024-01-17T15:03">17/01/2024 15:03</time></div>
+            <div class="updated">Atualizado em <time datetime="2024-01-17T15:03">23/01/2024 09:53</time></div>
         </footer>
     </div>
     <script>
-        // Função para carregar a imagem
-        function loadImage(url) {
-          const img = new Image();
-          img.src = url;
-          img.onload = () => {
-            // Adiciona a imagem à div
-            const conteinerBanner = document.querySelector(".conteinerBanner");
-            conteinerBanner.style.backgroundImage = `url(${img.src})`;
-          };
-        }
-    
-        // Carrega a imagem dinâmica
-        const imgUrl = "img/mainbanner.webp";
-        loadImage(imgUrl);
+!function(n){const e=new Image;e.src=n,e.onload=()=>{document.querySelector(".conteinerBanner").style.backgroundImage=`url(${e.src})`}}("img/mainbanner.webp")
       </script>
 </body>
 
