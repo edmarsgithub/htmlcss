@@ -166,25 +166,22 @@ html {
 }
 
 .container {
-    overflow: hidden;
-    /* Limpa o float */
+    display: flex;
+    justify-content: space-around;
 }
 
 .element {
-    box-sizing: border-box;
-    padding: 10px;
-    border: 1px solid #aeb52f;
-    
+    border: 1px solid red;
 }
 
-.left {
+.container>.element>.left {
     float: left;
-    width: 50px;
+    width: 90px;
 }
 
 .right {
     float: right;
-    width: 150px;
+    width: 250px;
 
 }
 
@@ -192,4 +189,35 @@ html {
     width: calc(100% - 200px);
 
     /* Subtrai a largura dos elementos à esquerda e à direita */
+}
+
+.linha1{
+    margin: 50px auto;
+    padding: 5px;
+    width: 700px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(0, 255, 238);
+    align-items: center;
+    justify-content: space-around;
+}
+
+.letra{
+    border: 3px solid red;
+}
+
+.letra.A{
+    background-color: rgb(249, 249, 139);
+    height: 30px;
+}
+
+.letra.B{
+    background-color: rgb(206, 127, 252);
+    height: 70px;
+}
+
+.letra.C{
+    background-color: rgb(237, 155, 155);
+    height: 50px;
 }

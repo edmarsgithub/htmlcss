@@ -1,11 +1,12 @@
-/* material-symbols-outlined-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Material Symbols Outlined';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/material-symbols-outlined-v156-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+    src: url('../fonts/material-symbols-outlined-v156-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
 :root {
     --backgroundColorR: #ff6b57;
@@ -70,11 +71,22 @@
     /* height: 31px; */
     text-align: center;
     text-decoration: none;
-    color: #ffffff;
+    color: #fffefe;
+    transition: 0.5s;
+}
+
+.navButton:hover{
+    color: #ff817a;
+    background-color: #2cc76a;
 }
 
 .navButtonLogin {
     background-color: var(--backgroundColorG);
+    border: 1px solid var(--backgroundColorG);
+}
+
+.navButtonLogin:hover {
+    border: 1px solid rgb(255, 255, 255);
 }
 
 .conteinerBanner {
@@ -111,15 +123,15 @@ h2 {
     text-align: center;
 }
 
-.blockSecure >.material-symbols-outlined{
+.blockSecure>.material-symbols-outlined {
     color: var(--backgroundColorG);
 }
 
-.blockPerform >.material-symbols-outlined{
+.blockPerform>.material-symbols-outlined {
     color: var(--backgroundColorR);
 }
 
-.blockSupport >.material-symbols-outlined{
+.blockSupport>.material-symbols-outlined {
     color: rgb(255, 123, 0);
 }
 
@@ -172,7 +184,8 @@ h2 {
     line-height: 20px;
 }
 
-.rectKnowMore, .rectKnowMoreDefault {
+.rectKnowMore,
+.rectKnowMoreDefault {
     background-color: var(--backgroundColorG);
     height: 60px;
     color: #ffffff;
@@ -183,7 +196,8 @@ h2 {
     font-weight: bold;
 }
 
-.circlePrice, .circlePriceDefault {
+.circlePrice,
+.circlePriceDefault {
     position: relative;
     display: flex;
     align-items: center;
@@ -197,8 +211,9 @@ h2 {
     margin: 0 auto -50px auto;
 }
 
-.circlePriceDefault, .rectKnowMoreDefault {
-    background-color: var(--backgroundColorR) ;
+.circlePriceDefault,
+.rectKnowMoreDefault {
+    background-color: var(--backgroundColorR);
 }
 
 .conteinerQuestion {
@@ -230,7 +245,8 @@ h2 {
     font-size: 18px;
 }
 
-.buttonSearchDomain, .buttonSend {
+.buttonSearchDomain,
+.buttonSend {
     margin-top: 15px;
     width: 200px;
     height: 50px;
@@ -239,6 +255,8 @@ h2 {
     background-color: var(--backgroundColorG);
     color: #ffffff;
     font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
 .conteinerForm {
@@ -273,7 +291,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-.textMessage{
+.textMessage {
     width: 60%;
     height: 150px;
     line-height: 20px;
@@ -283,14 +301,15 @@ h2 {
     margin-bottom: 0px;
 }
 
-.signature{
+.signature {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-top: 1px solid grey;
-    font-size: 11px;
+    font-size:  11px;
 }
 
-.sign, .updated{
+.sign,
+.updated {
     font-family: 'Courier New', Courier, monospace;
 }
