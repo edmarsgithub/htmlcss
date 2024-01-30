@@ -127,6 +127,13 @@ body {
     align-items: baseline;
 }
 
+.quadro.alStretch>.barra1,
+.quadro.alStretch>.barra2,
+.quadro.alStretch>.barra3 {
+    height: auto;
+    /* background-color: blueviolet; */
+}
+
 .quadro.alStretch {
     display: flex;
     align-items: stretch;
